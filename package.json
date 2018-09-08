@@ -1,0 +1,23 @@
+{
+  "name": "match3-ok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Desan/match3-ok.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Desan/match3-ok/issues"
+  },
+  "homepage": "https://github.com/Desan/match3-ok#readme",
+  "devDependencies": {
+    "express": "^4.16.3"
+  }
+}
