@@ -1,8 +1,11 @@
 /// <reference path="../typings/phaser.d.ts" />
-import { Game as PhaserGame } from "phaser"
+import "phaser"
 import { config } from "./config"
 
-class Game extends PhaserGame {
+class Game extends Phaser.Game {
 }
 
-export default new Game(config)
+// when the page is loaded, create our game instance
+window.onload = () => {
+    const game = new Game(config)
+}
