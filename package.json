@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Desan/match3-ok#readme",
   "devDependencies": {
+    "@types/node": "^10.9.4",
     "cross-env": "^5.2.0",
     "parcel": "^1.9.7",
     "typescript": "^3.0.3"

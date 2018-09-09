@@ -1,8 +1,9 @@
-import MainScene from "./scenes/MainScene"
+import GameBoard from "./scenes/GameBoard"
 
 export const config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
-    scene: [new MainScene()]
+    scene: [new GameBoard()],
+    backgroundColor: "#ffffff"
 }
