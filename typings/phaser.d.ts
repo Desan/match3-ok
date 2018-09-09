@@ -1,5 +1,7 @@
 declare type CallCallback = (item: Phaser.GameObjects.GameObject)=>void;
 
+declare type ActiveXObject = any;
+
 declare type GridAlignConfig = {
     /**
      * The width of the grid in items (not pixels). -1 means lay all items out horizontally, regardless of quantity.
@@ -539,7 +541,7 @@ declare type PluginObject = {
     /**
      * [description]
      */
-    default?: Array;
+    default?: Array<any>;
     /**
      * [description]
      */
