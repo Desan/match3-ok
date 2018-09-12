@@ -1,11 +1,7 @@
-/// <reference path="../typings/phaser.d.ts" />
-import "phaser"
-import { config } from "./config"
+import {App} from "./App"
 
-class Game extends Phaser.Game {
-}
+"use strict"
 
-// when the page is loaded, create our game instance
-window.onload = () => {
-    new Game(config)
-}
+const app = new App()
+
+document.body.appendChild(app.view)
