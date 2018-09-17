@@ -1,7 +1,7 @@
 import {Application} from "pixi.js"
 import {autobind} from "core-decorators"
 import { MainStage } from "./stages/MainStage"
-import tile from "./resourses/tile"
+import * as assets from "./resourses"
 
 @autobind
 export class App extends Application {
@@ -15,7 +15,7 @@ export class App extends Application {
 
     private setup() {
         this.loader
-            .add(tile)
+            .add(Object.values(assets))
             .load(this.startGame)
     }
 

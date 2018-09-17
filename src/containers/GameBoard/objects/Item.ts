@@ -1,6 +1,7 @@
 import { Sprite } from "pixi.js"
 import { App } from "../../../App"
-import tile from "../../../resourses/tile"
+import { tile } from "../../../resourses"
+import { GameBoard } from "../GameBoard"
 
 export class Item extends Sprite {
     constructor(
@@ -13,6 +14,8 @@ export class Item extends Sprite {
         this.x = x
         this.y = y
         this.texture = this.app.loader.resources[tile].texture
+        this.width = GameBoard.CELL_SIZE
+        this.height = GameBoard.CELL_SIZE
     }
 
 }
